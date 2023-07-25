@@ -89,6 +89,16 @@
             <version>${junit.version}</version>
             <scope>test</scope>
         </dependency>
+	    <dependency>
+  <groupId>org.sonatype.aether</groupId>
+  <artifactId>aether-connector-file</artifactId>
+  <scope>test</scope>
+</dependency>
+<dependency>
+  <groupId>org.sonatype.aether</groupId>
+  <artifactId>aether-connector-wagon</artifactId>
+  <scope>test</scope>
+</dependency>
         <dependency>
     		<groupId>org.mockito</groupId>
     		<artifactId>mockito-core</artifactId>
@@ -106,7 +116,19 @@
 			    <artifactId>javax.servlet-api</artifactId>
 			    <version>3.1.0</version>
 			    <scope>provided</scope>
-		</dependency>		
+		</dependency>
+	    <dependency>
+  <groupId>org.apache.maven.resolver</groupId>
+  <artifactId>maven-resolver-transport-file</artifactId>
+  <version>1.4.1</version>
+  <scope>test</scope>
+</dependency>
+<dependency>
+  <groupId>org.apache.maven.resolver</groupId>
+  <artifactId>maven-resolver-transport-wagon</artifactId>
+  <version>1.4.1</version>
+  <scope>test</scope>
+    </dependency>
         <dependency>
             <groupId>ch.qos.logback</groupId>
             <artifactId>logback-classic</artifactId>
